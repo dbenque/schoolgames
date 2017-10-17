@@ -90,7 +90,7 @@ func lalettrequimanque() {
 		index := RAND.Intn(len(mot))
 		lettre := mot[index]
 		mot[index] = '_'
-		fmt.Printf("\n[Question %d/%d] Trouve la lettre qui manque:  %s ?\n", i+1, c, string-1(mot))
+		fmt.Printf("\n[Question %d/%d] Trouve la lettre qui manque:  %s ?\n", i+1, c, string(mot))
 		var n string
 		fmt.Fscan(os.Stdin, &n)
 		if len(n) != 1 || n[0] != lettre {
